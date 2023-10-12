@@ -217,7 +217,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="page-header" id="top">
-                                    <h2 class="pageheader-title">Project Create</h2>
+                                    <h2 class="pageheader-title">Task Create</h2>
                                 </div>
                             </div>
                         </div>
@@ -232,44 +232,37 @@
                                 <form>
                                     <div class="row">
                                         <div class="form-group col-12">
-                                            <label for="projectName" class="col-form-label">Project Name</label>
-                                            <input id="projectName" type="text" class="form-control"
-                                                   placeholder="project name">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-12">
-                                            <label for="projectCode" class="col-form-label">Project Code</label>
-                                            <input id="projectCode" type="text" class="form-control"
-                                                   placeholder="project code">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-12">
-                                            <label>Assigned Manager</label>
+                                            <label>Project</label>
                                             <br>
-                                            <select name="managerDrop" id="managerDrop" class="custom-select"
+                                            <select name="projectDrop" id="projectDrop" class="custom-select"
                                                     required="required">
                                                 <option value="none" selected disabled>Select</option>
-                                                <option value="ozzy">ozzy</option>
+                                                <option value="hr-crm">Human Resources CRM</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="form-group col-6">
-                                            <label>Project Start Date</label>
-                                            <input type="date" class="form-control">
+                                        <div class="form-group col-12">
+                                            <label>Assigned Employee</label>
+                                            <br>
+                                            <select name="employeeDrop" id="employeeDrop" class="custom-select"
+                                                    required="required">
+                                                <option value="none" selected disabled>Select</option>
+                                                <option value="jamal">Jamal</option>
+                                            </select>
                                         </div>
-                                        <div class=" col-6">
-                                            <label>Project End Date</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-12">
-                                            <label>Project Detail</label>
-                                            <textarea placeholder="Write your project details..."
+                                            <label for="textSubject" class="col-form-label">Task Subject</label>
+                                            <input id="textSubject" type="text" class="form-control"
+                                                   placeholder="Task subject">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-12">
+                                            <label>Task Detail</label>
+                                            <textarea placeholder="Write your task details..."
                                                       class="form-control"></textarea>
                                         </div>
                                     </div>
@@ -290,43 +283,25 @@
                         <!-- ============================================================== -->
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header" id="bottom">
-                                <h2 class="pageheader-title">Project List</h2>
+                                <h2 class="pageheader-title">Task List</h2>
                             </div>
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                    <th scope="col">Project Code</th>
-                                    <th scope="col">Project Name</th>
-                                    <th scope="col">Start-End Date</th>
-                                    <th scope="col">Manager</th>
+                                    <th scope="col">Project</th>
+                                    <th scope="col">Task Subject</th>
+                                    <th scope="col">Assigned Employee</th>
+                                    <th scope="col">Assigned Date</th>
                                     <th scope="col">Status</th>
                                     <th scope="col">Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <th>PRJ001</th>
-                                    <td>Human Resource CRM</td>
-                                    <td>03/07/2022-03/18/2022</td>
-                                    <td>Delissa Norre</td>
-                                    <td>Open</td>
-                                    <td>
-                                        <a href="#">
-                                            <button class="btn btn-warning btn-sm">Update</button>
-                                        </a>
-                                        <a href="#">
-                                            <button class="btn btn-danger btn-sm">Delete</button>
-                                        </a>
-                                        <a href="#">
-                                            <button class="btn btn-info btn-sm">Complete</button>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>PRJ002</th>
-                                    <td>Infra Upgrade</td>
-                                    <td>03/10/2022-03/25/2022</td>
-                                    <td>Mike Smith</td>
+                                    <th>PRJ001-Human Resource CRM</th>
+                                    <td>Database Connection</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/11/2022</td>
                                     <td>In Progress</td>
                                     <td>
                                         <a href="#">
@@ -335,16 +310,28 @@
                                         <a href="#">
                                             <button class="btn btn-danger btn-sm">Delete</button>
                                         </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>PRJ002-Infra Upgrade</th>
+                                    <td>Server LAN Settings</td>
+                                    <td>Shaun Hayns</td>
+                                    <td>03/13/2022</td>
+                                    <td>UAT Testing</td>
+                                    <td>
                                         <a href="#">
-                                            <button class="btn btn-info btn-sm">Complete</button>
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>PRJ003</th>
-                                    <td>Shipment Tracking System</td>
-                                    <td>04/07/2022-04/22/2022</td>
-                                    <td>Ozzy Can</td>
+                                    <th>PRJ001-Human Resource CRM</th>
+                                    <td>Rest Codes Development</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/08/2022</td>
                                     <td>Completed</td>
                                     <td>
                                         <a href="#">
@@ -353,8 +340,20 @@
                                         <a href="#">
                                             <button class="btn btn-danger btn-sm">Delete</button>
                                         </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>PRJ001-Human Resource CRM</th>
+                                    <td>General Analysis</td>
+                                    <td>Craig Jark</td>
+                                    <td>03/08/2022</td>
+                                    <td>Open</td>
+                                    <td>
                                         <a href="#">
-                                            <button class="btn btn-info btn-sm">Complete</button>
+                                            <button class="btn btn-warning btn-sm">Update</button>
+                                        </a>
+                                        <a href="#">
+                                            <button class="btn btn-danger btn-sm">Delete</button>
                                         </a>
                                     </td>
                                 </tr>
